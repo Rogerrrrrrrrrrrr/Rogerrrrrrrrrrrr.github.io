@@ -2128,9 +2128,14 @@
 
 	White car with night wind
 
-	&lt;img src="images/gif1.gif" width ="500"&gt;
-	&lt;img src="images/gif2.gif" width ="500"&gt;
-	&lt;img src="images/gif3.gif" width ="500"&gt;
+	{
+		(set: $zpcar to (random: 2))
+	}
+
+	(if: $zpcar is 0)[&lt;img src="images/gif1.gif" width ="500"&gt;]
+	(elseif: $zpcar is 1)[&lt;img src="images/gif2.gif" width ="500"&gt;]
+	(elseif: $zpcar is 2)[&lt;img src="images/gif3.gif" width ="500"&gt;]
+
 
 	[[Just go for a ride with Audi]]
 	[[I don't think so]]
